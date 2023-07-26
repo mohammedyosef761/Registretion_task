@@ -14,7 +14,7 @@ const FooterStep = ({ inputName, nameOfSubmit }: FooterStepType) => {
       <div className="flex flex-col">
         <button
           type={"button"}
-          className={`mt-6 mb-2   w-[244.41px] h-[41.14px] text-white font-bold py-2 px-4 rounded-full ${
+          className={`mt-6 mb-2   w-[244.41px] h-[41.14px] text-white font-bold py-2 px-4 rounded-[8px] ${
             inputName
               ? "bg-gray-500 text-gray-600"
               : "hover:text-primary hover:bg-white border hover:border-primary bg-primary "
@@ -22,7 +22,7 @@ const FooterStep = ({ inputName, nameOfSubmit }: FooterStepType) => {
           disabled={inputName}
           onClick={() => setStep(step + 1)}
         >
-          {nameOfSubmit ? nameOfSubmit : "next"}
+          {nameOfSubmit ? nameOfSubmit : "NEXT"}
         </button>
 
         {step > 1 && (
