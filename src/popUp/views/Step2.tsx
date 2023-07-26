@@ -5,8 +5,6 @@ import FooterStep from "../components/FooterStep";
 const Step2 = () => {
   const [inputSelectCountry, setInputSelectCountry] = React.useState<string>();
   const [inputSelectRegion, setInputSelectRegion] = React.useState<string>();
-  console.log("inputSelectCountry",inputSelectCountry);
-  console.log("inputSelectRegion",inputSelectRegion)
 
   return (
     <div className="flex flex-col flex-1 justify-center items-center mt-12">
@@ -18,17 +16,9 @@ const Step2 = () => {
           nameOfSelect={"country"}
           setInputSelect={setInputSelectCountry}
         />
-        <Select
-          nameOfSelect={"region"}
-          setInputSelect={setInputSelectRegion}
-        />
+        <Select nameOfSelect={"region"} setInputSelect={setInputSelectRegion} />
       </div>
-      <FooterStep
-        inputName={
-          !inputSelectCountry  || !inputSelectRegion 
-        }
-      
-      />
+      <FooterStep inputName={!inputSelectCountry || !inputSelectRegion} />
     </div>
   );
 };

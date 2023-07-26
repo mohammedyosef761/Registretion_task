@@ -94,7 +94,7 @@ const LogoLayout = ({ onOpen }: LogoLayoutType) => {
       <div className="mt-[100px] mr-[100px] rounded-[8px]">
         <button
           onClick={()=>onOpen()}
-          className="bg-primary hover:bg-white hover:text-primary w-[419px] h-[41.14px] text-white font-bold py-2 px-4 rounded-[8px]"
+          className="bg-primary hover:bg-white hover:text-primary w-[419px] h-[41.14px] text-white font-bold py-2 px-4 rounded-buttonBorder"
         >
           open modal
         </button>
