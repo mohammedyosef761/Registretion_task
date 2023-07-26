@@ -6,6 +6,7 @@ const Step2 = () => {
   const [inputSelectCountry, setInputSelectCountry] = React.useState<string>();
   const [inputSelectRegion, setInputSelectRegion] = React.useState<string>();
 
+
   return (
     <div className="flex flex-col flex-1 justify-center items-center mt-12">
       <h1 className="font-bold text-lg w-[337.5px] h-[65.65px] text-center mb-12">
@@ -23,7 +24,7 @@ const Step2 = () => {
       </div>
       <FooterStep
         inputName={
-          inputSelectCountry?.length === 0 || inputSelectRegion?.length === 0
+          !inputSelectCountry  || !inputSelectRegion 
         }
       
       />
